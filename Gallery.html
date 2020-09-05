@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="img/fav-icon/favicon.ico"
+      type="image/x-icon"
+    />
+    <title>Phoenix SAE</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <style>
+         .col{
+             height: 290px;
+             width: 32.75%;
+             padding-left:4px;
+             padding-top:5px;
+            }
+        @media(min-width: 991px){
+            .col{
+             height: 290px;
+             width: 24.75%;
+             padding-top:5px;
+            }
+        }
+        @media(max-width:560px){
+            .col{
+                height: 290px;
+                width: 250px;
+                padding-top:5px;
+            }
+        }
+    
+
+    </style>
+  </head>
+  <body>
+    <header>
+      <div
+        style="
+          background-color: black;
+          text-align: center;
+          height: 60px;
+          padding-top: 10px;
+          display: block;
+        "
+      >
+        <a class="navbar-brand" href="#" style="margin-left: 35px; float: left"
+          ><img src="img/aero-logo-black.jpg" height="40" width="30" />&nbsp;</a
+        >
+        <a href="index.html" style="color: white; font-size: 25px"
+          >PHEONIX AERO</a
+        >
+        <a
+          class="navbar-brand"
+          href="#"
+          style="margin-right: 35px; float: right"
+          ><img src="img/aero-logo-black.jpg" height="40" width="30" />&nbsp;</a
+        >
+      </div>
+      <hr class="divider" />
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarCollapse"
+          aria-controls="navbarCollapse"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav mr-auto mt-2 mt-lg-0" style="margin-left: 20px">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Home </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="departments.html">Departments</a
+              ><span class="sr-only">(current)</span>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Achievements.html">Achievements</a
+              ><span class="sr-only">(current)</span>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="ContactUs.html">Contact Us</a
+              ><span class="sr-only">(current)</span>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+<body>
+    
+     <div>    
+        <img src="img/svnit-logo.png" class="col" id="1" type="button" class="btn btn-primary" data="" data-toggle="modal" data-target="#exampleModal" >
+        <img src="img/aero-logo.png"class="col" id="1">
+        <img src="img/carousel-3.jpg"class="col" id="1">
+        <img src="img/aero-logo-black.jpg"class="col" id="1">
+
+
+        <img src="img/carousel-3.jpg"class="col" id="1">
+        <img src="img/aero-logo-black.jpg"class="col" id="1">
+        <img src="img/aero-logo.png"class="col" id="1">
+        <img src="img/svnit-logo.png"class="col" id="1">
+ 
+        <img src="img/aero-logo-black.jpg"class="col" id="1">
+        <img src="img/carousel-3.jpg"class="col" id="1">
+        <img src="img/svnit-logo.png"class="col" id="1">
+        <img src="img/aero-logo.png"class="col" id="1">
+        
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <div id="image"></div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Send message</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      $('#exampleModal').on('show.bs.modal', function (event) {
+       var img=document.createElement('img');
+       img.src=event.data()
+});
+    </script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="owl/jquery.min.js"></script>
+    <script src="css/bootstrap.bundle.js"></script>
+</body>
